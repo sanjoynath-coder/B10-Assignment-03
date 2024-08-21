@@ -1,77 +1,102 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assaingment-3</title>
     <!-- Font Awesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Google font -->
-
-    <!-- tailwind css CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- DaisyUi CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!--Tailwind CSS and DaisyUi CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <!-- Tailwind css config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary: '#ABEF5F',
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
+
 <body>
     <header>
+        <!-- Navbar section -->
         <nav>
             <div class="navbar bg-base-100 w-11/12 mx-auto">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
+                <div class="">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
                     </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Item 1</a></li>
-                      <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
-                    </ul>
-                  </div>
-                  <i class="fa-solid fa-arrow-right"></i>
-                  <a class="btn btn-ghost text-xl">Rinterio</a>
+                    <div class="bg-primary rounded-full w-[32px] h-[32px] ">
+                        <i class="fa-solid fa-arrow-right -rotate-45 px-2 py-2"></i>
+                    </div>
+                    <div><a class="btn btn-ghost text-3xl font-bold px-0 py-0 pl-1">Rinterio</a></div>
+
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                      <details>
-                        <summary>Parent</summary>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </details>
-                    </li>
-                    <li><a>Item 3</a></li>
-                  </ul>
+                    <ul class="menu menu-horizontal ">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Porifolio</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contect Us</a></li>
+                    </ul>
                 </div>
-                <div class="navbar-end">
-                  <a class="btn">Button</a>
+                <!-- icon section -->
+               
+                <div class="bg-gray-100 border-gray-400 rounded-full w-[48px] h-[46px] mr-4 ">
+                    <i class="fa-solid fa-magnifying-glass mx-auto my-auto"></i>
+                </div>
+                <div class="bg-gray-100 border-gray-400 rounded-full w-[48px] h-[46px] mr-4">
+                    <i<i class="fa-solid fa-cart-shopping mx-auto my-auto"></i>
+                </div>
+                <div class="bg-primary rounded-full w-[220px] h-[50px]">
+                    <div> <a class="text-xl font-bold px-3">Book Consult</a></div>
+                    <div class="bg-[#1C1C1C] rounded-full ">
+                        <i class="fa-solid fa-arrow-right -rotate-45 px-2 py-2 text-white"></i>
+                    </div>
+                </div>
+               
+            </div>
+        </nav>
+        <!-- Hero Section -->
+         <section mb-24>
+            <div class="mt-12 h-screen flex items-center justify-center">
+                <div class="">
+                  <img src="./assets/banner.png" class="lg:ml-40 mb-7" />
+                  <div class="text-center">
+                    <h1 class="text-5xl font-bold">A barn house of this design has a <br> striking appearance</h1>
+                    <p class="py-6 text-gray-600">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+                    </p>
+                    <div>
+                        <button class="bg-primary w-[200px] h-[50px] rounded-full text-xl font-semibold bg-opacity-50 border-2 border-green-200">View Details <a href="#" class="rounded-full bg-primary "><i class="fa-solid fa-arrow-right -rotate-45 px-2 w-10  "></i></a>
+                        </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-        </nav>
+         </section>
     </header>
     <main>
 
@@ -80,4 +105,5 @@
 
     </footer>
 </body>
+
 </html>
