@@ -37,35 +37,43 @@
         <!-- Navbar section -->
         <nav class="sm:flex items-center justify-between py-5 w-[500px] lg:w-11/12 mx-auto">
             <!-- left_logo -->
-            <div class="logo flex ">
-                <div class="bg-primary px-1 rounded-full mr-2"><i
-                        class="fa-solid fa-arrow-right p-1 -rotate-45 text-xl"></i> </div>
-                <a href="#" class="text-3xl font-extrabold">Rinterio</a>
+            <div class="flex justify-between">
+                <div class="logo flex">
+                    <div class="bg-primary px-1 rounded-full mr-2"><i
+                            class="fa-solid fa-arrow-right p-1 -rotate-45 text-xl"></i> </div>
+                    <a href="#" class="text-3xl font-extrabold">Rinterio</a>
+                     <!-- Hamberger -->
+                </div>
+                <div class="w-10 h-10 bg-white border rounded-full">
+                    <i class="fa-solid fa-bars block lg:hidden mt-3 ml-3"></i>
+                </div>
             </div>
+           
             <!-- Navbar -->
             <div class="">
                 <ul class="flex">
-                    <li><a href="#" class="text-base px-5 font-extrabold ">Home</a></li>
-                    <li><a href="#" class="text-base px-5  font-normal">Services</a></li>
-                    <li><a href="#" class="text-base px-5  font-normal">Portfolio</a></li>
-                    <li><a href="#" class="text-base px-5  font-normal">Blogs</a></li>
-                    <li><a href="#  " class="text-base px-5  font-normal">Contact Us</a></li>
+                    <li><a href="#" class="text-base px-5 font-extrabold hidden lg:block">Home</a></li>
+                    <li><a href="#" class="text-base px-5  font-normal hidden lg:block">Services</a></li>
+                    <li><a href="#" class="text-base px-5  font-normal hidden lg:block">Portfolio</a></li>
+                    <li><a href="#" class="text-base px-5  font-normal hidden lg:block">Blogs</a></li>
+                    <li><a href="#  " class="text-base px-5  font-normal hidden lg:block">Contact Us</a></li>
                 </ul>
             </div>
             <div class="flex items-center gap-5">
                 <!-- Search Icon  -->
-                <div>
+                <div class="hidden lg:block">
                     <i class="fa-solid fa-magnifying-glass p-3 text-gray-500 rounded-full border border-gray-200"></i>
                 </div>
                 <!-- Cart Icon  -->
-                <div>
+                <div class="hidden lg:block">
                     <i class="fa-solid fa-cart-shopping p-3 text-gray-500 border border-gray-200 rounded-full"></i>
                 </div>
                 </btnBgColor>
                 <!-- btn  -->
-                <button class="w-56  h-14 rounded-full bg-primary text-xl font-extrabold">Book Consult <i
+                <button class="w-56  h-14 rounded-full bg-primary text-xl font-extrabold hidden lg:block">Book Consult <i
                         class="fa-solid fa-arrow-right bg-black w-8 h-8 text-center inline-flex justify-center items-center rounded-full text-white -rotate-45"></i>
                 </button>
+                
             </div>
 
         </nav>
@@ -404,7 +412,7 @@
         <!-- ===Imprerssive MInd section=== -->
          <section>
             <!-- Text container -->
-        <div class="text-center">
+        <div class="text-center mt-5">
             <h2 class="text-4xl font-bold">Impressive Minds</h2>
             <p class="text-base text-gray-600 mt-5">As the leading interior design company in Bangladesh,we are
                 committed to <br>
